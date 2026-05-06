@@ -22,3 +22,16 @@ function displayQuote() {
 let button = document.getElementById("new-quote-btn");
 button.addEventListener("click", displayQuote);
 
+// Get the elements
+let textElement = document.getElementById("quote-text");
+let button = document.getElementById("new-quote-btn");
+
+// Function that changes the text
+function changeText() {
+    textElement.innerText = "The text changed!";
+}
+
+// Connect button to function
+button.addEventListener("click", changeText);
+
+
