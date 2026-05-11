@@ -2,7 +2,9 @@ console.log("Script started");
 
 // Add your quotes here
 let quotes = [
-    // You add quotes here!
+    "Do the best you can until you know better. Then when you know better, do better. - Maya Angelou",
+    "If there is no struggle, there is no progress. - Frederick Douglass",
+    "Change is the law of life and those who look only to the past or present are certain to miss the future. - John F. Kennedy"
 ];
 
 // Function to get random quote
@@ -22,16 +24,7 @@ function displayQuote() {
 let button = document.getElementById("new-quote-btn");
 button.addEventListener("click", displayQuote);
 
-// Get the elements
-let textElement = document.getElementById("quote-text");
-let button = document.getElementById("new-quote-btn");
-
-// Function that changes the text
-function changeText() {
-    textElement.innerText = "The text changed!";
-}
-
-// Connect button to function
-button.addEventListener("click", changeText);
+// Display a quote when the page loads
+displayQuote();
 
 
