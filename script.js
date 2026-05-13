@@ -27,4 +27,9 @@ button.addEventListener("click", displayQuote);
 // Display a quote when the page loads
 displayQuote();
 
+function getRandomQuote() {
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];  // You need to add this!
+}
+
 
